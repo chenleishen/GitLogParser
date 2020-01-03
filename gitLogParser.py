@@ -38,6 +38,9 @@ def parseCommit(commitLines):
 		else:
 			print ('ERROR: Unexpected Line: ' + nextLine)
 
+    if len(commit) != 0:
+        commits.append(commit)
+
 if __name__ == '__main__':
 	parseCommit(sys.stdin.readlines())
 
